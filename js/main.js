@@ -324,3 +324,50 @@
 
 })(jQuery);
 
+// tap to scroll up
+      // Get the button
+      var mybutton = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, scroll to the top of the document
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+
+	//   whatsapp js
+	function sendToWhatsApp(event) {
+		event.preventDefault(); // Prevent form submission
+	
+		// Get input values
+		let pickup = document.getElementById("pickup").value;
+		let dropoff = document.getElementById("dropoff").value;
+		let pickDate = document.getElementById("book_pick_date").value;
+		let dropDate = document.getElementById("book_off_date").value;
+		let pickTime = document.getElementById("time_pick").value;
+	
+		// Your WhatsApp number (with country code)
+		let phoneNumber = "+919001006973";
+	
+		// Create the WhatsApp message
+		let message = `Hello, I want to book a car.%0A
+		🚖 Pick-up Location: ${pickup}%0A
+		📍 Drop-off Location: ${dropoff}%0A
+		📅 Pick-up Date: ${pickDate}%0A
+		📅 Drop-off Date: ${dropDate}%0A
+		⏰ Pick-up Time: ${pickTime}`;
+	
+		// WhatsApp API URL
+		let url = `https://wa.me/${phoneNumber}?text=${message}`;
+	
+		// Redirect to WhatsApp
+		window.open(url, "_blank");
+	}

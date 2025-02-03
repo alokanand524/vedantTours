@@ -8492,6 +8492,25 @@ h1, h2, h3, h4, h5,
 
    }
 
+   /* tap to scrool up # alok */
+   #scrollToTopBtn {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #0056b3;
+  }
+
 .request-form {
   background: #fff;
   padding: 30px;
