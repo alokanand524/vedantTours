@@ -8384,7 +8384,23 @@ h1, h2, h3, h4, h5,
       height: 600px; }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 600px !important; }
+
 /* added alok */
+
+
+.block-20 {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 270px; }
+  .block-20.img {
+    height: 700px;
+    border-radius: 5px; }
+
 .featured-top {
   margin-top: -250px; }
 .slider-text {
@@ -8487,6 +8503,9 @@ h1, h2, h3, h4, h5,
     width: 100%;
     opacity: .3;
     height: 350px;
+}
+.block-20.img {
+  height: 300px;
 }
 
 
@@ -9548,18 +9567,6 @@ textarea.form-control {
     .ftco-counter .counter-wrap {
       margin-bottom: 20px; } }
 
-.block-20 {
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 270px; }
-  .block-20.img {
-    height: 700px;
-    border-radius: 5px; }
 
 .blog-entry {
   overflow: hidden;
