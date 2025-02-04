@@ -12016,7 +12016,7 @@ h5,
 
 .hero-wrap {
   width: 100%;
-  height: 600px;
+  height: 610px;
   position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12062,14 +12062,14 @@ h5,
 } */
 
 .hero-wrap.hero-wrap-2 {
-  height: 600px !important;
+  height: 610px !important;
   position: relative;
 }
 
 .hero-wrap.hero-wrap-2 .overlay {
   width: 100%;
   opacity: .3;
-  height: 600px;
+  height: 610px;
 }
 
 .hero-wrap.hero-wrap-2 .slider-text {
